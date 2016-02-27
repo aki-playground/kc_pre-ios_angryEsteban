@@ -10,6 +10,7 @@
 
 @interface AOABelenViewController ()
 
+@property (strong, nonatomic) UIImageView *lastShot;
 @end
 
 @implementation AOABelenViewController
@@ -37,6 +38,8 @@
 -(void) didTap:(UITapGestureRecognizer *) tap{
  
     if(tap.state == UIGestureRecognizerStateRecognized){
+        
+        
         UIImageView *crack = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"crackedGlass.png"]];
         crack.center = [tap locationInView:self.belenView];
         [self.belenView addSubview:crack];
@@ -47,6 +50,29 @@
 }
 
 -(void) didPan:(UIPanGestureRecognizer *) pan{
+
+    
+    
+    if(pan.state == UIGestureRecognizerStateChanged){
+        
+        //obtener el current poition
+        CGPoint currentPosition = [pan locationInView:self.belenView];
+        //Obtener el cgrect
+        CGRect lastShotRect = self.lastShot.frame;
+        
+        //ver si el curren point esta dentro del cgrect del último shot
+        if(!CGRectContainsPoint(lastShotRect, currentPosition)){
+            //Si no, pintar imagen y guardar shot en lastshot
+            UIImageView *shot = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bloodWound.png"]];
+            shot.center = [pan locationInView:self.belenView];
+            [self.belenView addSubview:shot];
+            self.lastShot =shot;
+        }
+
+        //Añadir sonido
+        [self playPunch];
+    }
+
     
 }
 
