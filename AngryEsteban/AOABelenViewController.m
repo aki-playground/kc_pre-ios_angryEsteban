@@ -11,6 +11,11 @@
 @interface AOABelenViewController ()
 
 @property (strong, nonatomic) UIImageView *lastShot;
+
+@property (strong, nonatomic) NSArray *showSprites;
+@property (strong, nonatomic) NSArray *hideSprites;
+@property (strong, nonatomic) UIImageView *tapeView;
+@property (nonatomic) CGPoint lastTouch;
 @end
 
 @implementation AOABelenViewController
@@ -20,6 +25,9 @@
     [super viewWillAppear:animated];
     
     //crear reconocedores
+    
+    self.showSprites = @[[UIImage imageNamed:@"tape1.png"], [UIImage imageNamed:@"tape2.png"], [UIImage imageNamed:@"tape3.png"], [UIImage imageNamed:@"tape4.png"]];
+    self.hideSprites = @[[UIImage imageNamed:@"tape4.png"], [UIImage imageNamed:@"tape3.png"], [UIImage imageNamed:@"tape2.png"], [UIImage imageNamed:@"tape1.png"]];
     
     UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap:)];
     
@@ -78,9 +86,46 @@
 
 -(void) didSwipe: (UISwipeGestureRecognizer *) swipe {
     
+    if(swipe.state == UIGestureRecognizerStateRecognized){
+        if (!self.tapeView){
+            self.tapeView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tape4.png"]];
+            self.tapeView.animationImages = self.showSprites;
+            self.tapeView.animationRepeatCount = 1;
+            self.tapeView.animationDuration = 0.2;
+        
+            self.tapeView.center = [swipe locationInView:self.belenView];
+            [self.belenView addSubview:self.tapeView];
+        
+            [self.tapeView startAnimating];
+        } else {
+            self.tapeView.animationImages = self.hideSprites;
+            self.tapeView.image = nil;
+        
+            [self.tapeView startAnimating];
+        
+            double delayInSeconds = 0.4;
+        
+            dispatch_time_t popTime = dispatch_time(DISPATCH_TIME_NOW, (int64_t)(delayInSeconds * NSEC_PER_SEC));
+            dispatch_after(popTime, dispatch_get_main_queue(), ^(void){
+                [self.tapeView removeFromSuperview];
+            });
+        }
+    }
 }
 
+-(void) motionEnded:(UIEventSubtype)motion
+          withEvent:(UIEvent *)event {
+    if(motion == UIEventSubtypeMotionShake){
+        for(UIView *view in self.belenView.subviews){
+            [view removeFromSuperview];
+        }
+        self.tapeView = nil;
+    }
+}
 
+-(BOOL) canBecomeFirstResponder{
+    return YES;
+}
 #pragma mark - Sounds
 -(void) playPunch{
     

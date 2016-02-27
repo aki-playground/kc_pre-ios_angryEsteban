@@ -19,6 +19,10 @@
 		AA190E641C821B0400728949 /* belen-esteban-fea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA190E601C821B0400728949 /* belen-esteban-fea.jpg */; };
 		AA190E671C821BF800728949 /* crackedGlass.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E661C821BF800728949 /* crackedGlass.png */; };
 		AA190E691C821EDF00728949 /* bloodWound.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E681C821EDF00728949 /* bloodWound.png */; };
+		AA190E6E1C82257200728949 /* tape1.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E6A1C82257200728949 /* tape1.png */; };
+		AA190E6F1C82257200728949 /* tape2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E6B1C82257200728949 /* tape2.png */; };
+		AA190E701C82257200728949 /* tape3.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E6C1C82257200728949 /* tape3.png */; };
+		AA190E711C82257200728949 /* tape4.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E6D1C82257200728949 /* tape4.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +42,10 @@
 		AA190E601C821B0400728949 /* belen-esteban-fea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "belen-esteban-fea.jpg"; path = "../../../../../../Downloads/14128461352014-04-01_05-03-09__4.3.2-Imagenes-zip/AngryEsteban/belen-esteban-fea.jpg"; sourceTree = "<group>"; };
 		AA190E661C821BF800728949 /* crackedGlass.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = crackedGlass.png; path = "../../../../../../Downloads/14128461432014-04-01_05-04-09__4.3.3-Implementar-el-tap-zip/AngryEsteban/crackedGlass.png"; sourceTree = "<group>"; };
 		AA190E681C821EDF00728949 /* bloodWound.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bloodWound.png; path = "../../../../../../Downloads/14128461492014-04-01_05-08-09__4.4-Implementar-el-Pan-zip/AngryEsteban/bloodWound.png"; sourceTree = "<group>"; };
+		AA190E6A1C82257200728949 /* tape1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tape1.png; path = "../../../../../../Downloads/14128461602014-04-01_05-10-26__4.5.1-Swipe-zip/AngryEsteban/tape1.png"; sourceTree = "<group>"; };
+		AA190E6B1C82257200728949 /* tape2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tape2.png; path = "../../../../../../Downloads/14128461602014-04-01_05-10-26__4.5.1-Swipe-zip/AngryEsteban/tape2.png"; sourceTree = "<group>"; };
+		AA190E6C1C82257200728949 /* tape3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tape3.png; path = "../../../../../../Downloads/14128461602014-04-01_05-10-26__4.5.1-Swipe-zip/AngryEsteban/tape3.png"; sourceTree = "<group>"; };
+		AA190E6D1C82257200728949 /* tape4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tape4.png; path = "../../../../../../Downloads/14128461602014-04-01_05-10-26__4.5.1-Swipe-zip/AngryEsteban/tape4.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +103,10 @@
 		AA190E651C821B0D00728949 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA190E6A1C82257200728949 /* tape1.png */,
+				AA190E6B1C82257200728949 /* tape2.png */,
+				AA190E6C1C82257200728949 /* tape3.png */,
+				AA190E6D1C82257200728949 /* tape4.png */,
 				AA190E681C821EDF00728949 /* bloodWound.png */,
 				AA190E661C821BF800728949 /* crackedGlass.png */,
 				AA190E5D1C821B0400728949 /* 3833.esteban.jpg */,
@@ -165,12 +177,16 @@
 				AA190E611C821B0400728949 /* 3833.esteban.jpg in Resources */,
 				AA190E691C821EDF00728949 /* bloodWound.png in Resources */,
 				AA190E621C821B0400728949 /* 151133933.jpg in Resources */,
+				AA190E6E1C82257200728949 /* tape1.png in Resources */,
 				AA190E671C821BF800728949 /* crackedGlass.png in Resources */,
+				AA190E701C82257200728949 /* tape3.png in Resources */,
 				AA190E641C821B0400728949 /* belen-esteban-fea.jpg in Resources */,
 				AA190E4E1C82133900728949 /* Assets.xcassets in Resources */,
 				AA190E631C821B0400728949 /* bel_n_esteban.jpg in Resources */,
+				AA190E711C82257200728949 /* tape4.png in Resources */,
 				AA190E511C82133900728949 /* LaunchScreen.storyboard in Resources */,
 				AA190E5C1C82139D00728949 /* AOABelenViewController.xib in Resources */,
+				AA190E6F1C82257200728949 /* tape2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
