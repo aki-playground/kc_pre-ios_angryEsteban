@@ -16,7 +16,7 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="belen-esteban-fea.jpg" id="pnV-au-rAe">
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bel_n_esteban.jpg" id="pnV-au-rAe">
                     <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                 </imageView>
@@ -26,6 +26,6 @@
         </view>
     </objects>
     <resources>
-        <image name="belen-esteban-fea.jpg" width="320" height="408"/>
+        <image name="bel_n_esteban.jpg" width="617" height="266"/>
     </resources>
 </document>
