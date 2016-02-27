@@ -13,6 +13,10 @@
 		AA190E511C82133900728949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA190E4F1C82133900728949 /* LaunchScreen.storyboard */; };
 		AA190E5B1C82139D00728949 /* AOABelenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA190E591C82139D00728949 /* AOABelenViewController.m */; };
 		AA190E5C1C82139D00728949 /* AOABelenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA190E5A1C82139D00728949 /* AOABelenViewController.xib */; };
+		AA190E611C821B0400728949 /* 3833.esteban.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA190E5D1C821B0400728949 /* 3833.esteban.jpg */; };
+		AA190E621C821B0400728949 /* 151133933.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA190E5E1C821B0400728949 /* 151133933.jpg */; };
+		AA190E631C821B0400728949 /* bel_n_esteban.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA190E5F1C821B0400728949 /* bel_n_esteban.jpg */; };
+		AA190E641C821B0400728949 /* belen-esteban-fea.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AA190E601C821B0400728949 /* belen-esteban-fea.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,10 @@
 		AA190E581C82139D00728949 /* AOABelenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOABelenViewController.h; sourceTree = "<group>"; };
 		AA190E591C82139D00728949 /* AOABelenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOABelenViewController.m; sourceTree = "<group>"; };
 		AA190E5A1C82139D00728949 /* AOABelenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AOABelenViewController.xib; sourceTree = "<group>"; };
+		AA190E5D1C821B0400728949 /* 3833.esteban.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 3833.esteban.jpg; path = "../../../../../../Downloads/14128461352014-04-01_05-03-09__4.3.2-Imagenes-zip/AngryEsteban/3833.esteban.jpg"; sourceTree = "<group>"; };
+		AA190E5E1C821B0400728949 /* 151133933.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = 151133933.jpg; path = "../../../../../../Downloads/14128461352014-04-01_05-03-09__4.3.2-Imagenes-zip/AngryEsteban/151133933.jpg"; sourceTree = "<group>"; };
+		AA190E5F1C821B0400728949 /* bel_n_esteban.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bel_n_esteban.jpg; path = "../../../../../../Downloads/14128461352014-04-01_05-03-09__4.3.2-Imagenes-zip/AngryEsteban/bel_n_esteban.jpg"; sourceTree = "<group>"; };
+		AA190E601C821B0400728949 /* belen-esteban-fea.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = "belen-esteban-fea.jpg"; path = "../../../../../../Downloads/14128461352014-04-01_05-03-09__4.3.2-Imagenes-zip/AngryEsteban/belen-esteban-fea.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 		AA190E461C82133900728949 /* AngryEsteban */ = {
 			isa = PBXGroup;
 			children = (
+				AA190E651C821B0D00728949 /* Resources */,
 				AA190E4A1C82133900728949 /* AppDelegate.h */,
 				AA190E4B1C82133900728949 /* AppDelegate.m */,
 				AA190E4D1C82133900728949 /* Assets.xcassets */,
@@ -77,6 +86,17 @@
 				AA190E481C82133900728949 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AA190E651C821B0D00728949 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				AA190E5D1C821B0400728949 /* 3833.esteban.jpg */,
+				AA190E5E1C821B0400728949 /* 151133933.jpg */,
+				AA190E5F1C821B0400728949 /* bel_n_esteban.jpg */,
+				AA190E601C821B0400728949 /* belen-esteban-fea.jpg */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +156,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA190E611C821B0400728949 /* 3833.esteban.jpg in Resources */,
+				AA190E621C821B0400728949 /* 151133933.jpg in Resources */,
+				AA190E641C821B0400728949 /* belen-esteban-fea.jpg in Resources */,
 				AA190E4E1C82133900728949 /* Assets.xcassets in Resources */,
+				AA190E631C821B0400728949 /* bel_n_esteban.jpg in Resources */,
 				AA190E511C82133900728949 /* LaunchScreen.storyboard in Resources */,
 				AA190E5C1C82139D00728949 /* AOABelenViewController.xib in Resources */,
 			);

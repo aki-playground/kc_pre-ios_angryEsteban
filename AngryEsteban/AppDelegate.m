@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "AOABelenViewController.h";
+#import "AOABelenViewController.h"
 @interface AppDelegate ()
 
 @end

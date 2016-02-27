@@ -14,24 +14,35 @@
 
 @implementation AOABelenViewController
 
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+
+- (void) viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    
+    //crear reconocedores
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(didTap:)];
+    
+    UIPanGestureRecognizer *pan = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didPan:)];
+    
+    UISwipeGestureRecognizer *swipe = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(didSwipe:)];
+    
+    //Añadir los reconocedores a la vista
+    [self.view addGestureRecognizer:tap];
+    [self.view addGestureRecognizer:pan];
+    [self.view addGestureRecognizer:swipe];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+#pragma mark - Actions
+
+-(void) didTap:(UITapGestureRecognizer *) tap{
+    
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+-(void) didPan:(UIPanGestureRecognizer *) pan{
+    
 }
-*/
 
+-(void) didSwipe: (UISwipeGestureRecognizer *) swipe {
+    
+}
 @end
