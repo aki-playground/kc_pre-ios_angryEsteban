@@ -11,6 +11,8 @@
 		AA190E4C1C82133900728949 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AA190E4B1C82133900728949 /* AppDelegate.m */; };
 		AA190E4E1C82133900728949 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AA190E4D1C82133900728949 /* Assets.xcassets */; };
 		AA190E511C82133900728949 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AA190E4F1C82133900728949 /* LaunchScreen.storyboard */; };
+		AA190E5B1C82139D00728949 /* AOABelenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AA190E591C82139D00728949 /* AOABelenViewController.m */; };
+		AA190E5C1C82139D00728949 /* AOABelenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AA190E5A1C82139D00728949 /* AOABelenViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +23,9 @@
 		AA190E4D1C82133900728949 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		AA190E501C82133900728949 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AA190E521C82133900728949 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AA190E581C82139D00728949 /* AOABelenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOABelenViewController.h; sourceTree = "<group>"; };
+		AA190E591C82139D00728949 /* AOABelenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOABelenViewController.m; sourceTree = "<group>"; };
+		AA190E5A1C82139D00728949 /* AOABelenViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AOABelenViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +64,9 @@
 				AA190E4F1C82133900728949 /* LaunchScreen.storyboard */,
 				AA190E521C82133900728949 /* Info.plist */,
 				AA190E471C82133900728949 /* Supporting Files */,
+				AA190E581C82139D00728949 /* AOABelenViewController.h */,
+				AA190E591C82139D00728949 /* AOABelenViewController.m */,
+				AA190E5A1C82139D00728949 /* AOABelenViewController.xib */,
 			);
 			path = AngryEsteban;
 			sourceTree = "<group>";
@@ -130,6 +138,7 @@
 			files = (
 				AA190E4E1C82133900728949 /* Assets.xcassets in Resources */,
 				AA190E511C82133900728949 /* LaunchScreen.storyboard in Resources */,
+				AA190E5C1C82139D00728949 /* AOABelenViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				AA190E4C1C82133900728949 /* AppDelegate.m in Sources */,
+				AA190E5B1C82139D00728949 /* AOABelenViewController.m in Sources */,
 				AA190E491C82133900728949 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
