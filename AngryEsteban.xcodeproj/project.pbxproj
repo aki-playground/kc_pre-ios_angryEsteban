@@ -23,6 +23,10 @@
 		AA190E6F1C82257200728949 /* tape2.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E6B1C82257200728949 /* tape2.png */; };
 		AA190E701C82257200728949 /* tape3.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E6C1C82257200728949 /* tape3.png */; };
 		AA190E711C82257200728949 /* tape4.png in Resources */ = {isa = PBXBuildFile; fileRef = AA190E6D1C82257200728949 /* tape4.png */; };
+		AA190E751C82C0A000728949 /* machineGunLoop.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA190E721C82C0A000728949 /* machineGunLoop.wav */; };
+		AA190E761C82C0A000728949 /* niQueFueraYoBinLaden.m4a in Resources */ = {isa = PBXBuildFile; fileRef = AA190E731C82C0A000728949 /* niQueFueraYoBinLaden.m4a */; };
+		AA190E771C82C0A000728949 /* punch.wav in Resources */ = {isa = PBXBuildFile; fileRef = AA190E741C82C0A000728949 /* punch.wav */; };
+		AA190E7A1C82C17D00728949 /* AOASystemSounds.m in Sources */ = {isa = PBXBuildFile; fileRef = AA190E791C82C17D00728949 /* AOASystemSounds.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +50,13 @@
 		AA190E6B1C82257200728949 /* tape2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tape2.png; path = "../../../../../../Downloads/14128461602014-04-01_05-10-26__4.5.1-Swipe-zip/AngryEsteban/tape2.png"; sourceTree = "<group>"; };
 		AA190E6C1C82257200728949 /* tape3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tape3.png; path = "../../../../../../Downloads/14128461602014-04-01_05-10-26__4.5.1-Swipe-zip/AngryEsteban/tape3.png"; sourceTree = "<group>"; };
 		AA190E6D1C82257200728949 /* tape4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = tape4.png; path = "../../../../../../Downloads/14128461602014-04-01_05-10-26__4.5.1-Swipe-zip/AngryEsteban/tape4.png"; sourceTree = "<group>"; };
+		AA190E721C82C0A000728949 /* machineGunLoop.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = machineGunLoop.wav; sourceTree = "<group>"; };
+		AA190E731C82C0A000728949 /* niQueFueraYoBinLaden.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = niQueFueraYoBinLaden.m4a; sourceTree = "<group>"; };
+		AA190E741C82C0A000728949 /* punch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = punch.wav; sourceTree = "<group>"; };
+		AA190E781C82C17D00728949 /* AOASystemSounds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AOASystemSounds.h; sourceTree = "<group>"; };
+		AA190E791C82C17D00728949 /* AOASystemSounds.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AOASystemSounds.m; sourceTree = "<group>"; };
+		AA190E7B1C82C29A00728949 /* tape.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = tape.caf; sourceTree = "<group>"; };
+		AA190E7C1C82C29A00728949 /* untape.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = untape.caf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +99,8 @@
 				AA190E581C82139D00728949 /* AOABelenViewController.h */,
 				AA190E591C82139D00728949 /* AOABelenViewController.m */,
 				AA190E5A1C82139D00728949 /* AOABelenViewController.xib */,
+				AA190E781C82C17D00728949 /* AOASystemSounds.h */,
+				AA190E791C82C17D00728949 /* AOASystemSounds.m */,
 			);
 			path = AngryEsteban;
 			sourceTree = "<group>";
@@ -103,9 +116,14 @@
 		AA190E651C821B0D00728949 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				AA190E7B1C82C29A00728949 /* tape.caf */,
+				AA190E7C1C82C29A00728949 /* untape.caf */,
 				AA190E6A1C82257200728949 /* tape1.png */,
 				AA190E6B1C82257200728949 /* tape2.png */,
 				AA190E6C1C82257200728949 /* tape3.png */,
+				AA190E721C82C0A000728949 /* machineGunLoop.wav */,
+				AA190E731C82C0A000728949 /* niQueFueraYoBinLaden.m4a */,
+				AA190E741C82C0A000728949 /* punch.wav */,
 				AA190E6D1C82257200728949 /* tape4.png */,
 				AA190E681C821EDF00728949 /* bloodWound.png */,
 				AA190E661C821BF800728949 /* crackedGlass.png */,
@@ -174,9 +192,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AA190E761C82C0A000728949 /* niQueFueraYoBinLaden.m4a in Resources */,
 				AA190E611C821B0400728949 /* 3833.esteban.jpg in Resources */,
 				AA190E691C821EDF00728949 /* bloodWound.png in Resources */,
+				AA190E771C82C0A000728949 /* punch.wav in Resources */,
 				AA190E621C821B0400728949 /* 151133933.jpg in Resources */,
+				AA190E751C82C0A000728949 /* machineGunLoop.wav in Resources */,
 				AA190E6E1C82257200728949 /* tape1.png in Resources */,
 				AA190E671C821BF800728949 /* crackedGlass.png in Resources */,
 				AA190E701C82257200728949 /* tape3.png in Resources */,
@@ -199,6 +220,7 @@
 			files = (
 				AA190E4C1C82133900728949 /* AppDelegate.m in Sources */,
 				AA190E5B1C82139D00728949 /* AOABelenViewController.m in Sources */,
+				AA190E7A1C82C17D00728949 /* AOASystemSounds.m in Sources */,
 				AA190E491C82133900728949 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

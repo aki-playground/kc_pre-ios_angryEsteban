@@ -7,6 +7,7 @@
 //
 
 #import "AOABelenViewController.h"
+#import "AOASystemSounds.h"
 
 @interface AOABelenViewController ()
 
@@ -25,7 +26,7 @@
     [super viewWillAppear:animated];
     
     //crear reconocedores
-    
+    self.title = @"Angry Esteban";
     self.showSprites = @[[UIImage imageNamed:@"tape1.png"], [UIImage imageNamed:@"tape2.png"], [UIImage imageNamed:@"tape3.png"], [UIImage imageNamed:@"tape4.png"]];
     self.hideSprites = @[[UIImage imageNamed:@"tape4.png"], [UIImage imageNamed:@"tape3.png"], [UIImage imageNamed:@"tape2.png"], [UIImage imageNamed:@"tape1.png"]];
     
@@ -53,7 +54,7 @@
         [self.belenView addSubview:crack];
         
         //Añadir sonido
-        [self playPunch];
+        [[AOASystemSounds sharedSystemSounds] punch];
     }
 }
 
@@ -77,8 +78,10 @@
             self.lastShot =shot;
         }
 
-        //Añadir sonido
-        [self playPunch];
+    } else if (pan.state == UIGestureRecognizerStateBegan){
+        [[AOASystemSounds sharedSystemSounds] startMachineGun];
+    }else if (pan.state == UIGestureRecognizerStateEnded){
+        [[AOASystemSounds sharedSystemSounds] stopMachineGun];
     }
 
     
@@ -88,6 +91,8 @@
     
     if(swipe.state == UIGestureRecognizerStateRecognized){
         if (!self.tapeView){
+            
+            [[AOASystemSounds sharedSystemSounds] tape];
             self.tapeView = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"tape4.png"]];
             self.tapeView.animationImages = self.showSprites;
             self.tapeView.animationRepeatCount = 1;
@@ -98,6 +103,7 @@
         
             [self.tapeView startAnimating];
         } else {
+            [[AOASystemSounds sharedSystemSounds] untape];
             self.tapeView.animationImages = self.hideSprites;
             self.tapeView.image = nil;
         

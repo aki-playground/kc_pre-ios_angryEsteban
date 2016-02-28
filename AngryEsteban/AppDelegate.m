@@ -19,8 +19,8 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     AOABelenViewController *belenVC = [[AOABelenViewController alloc]init];
-    
-    self.window.rootViewController = belenVC;
+    UINavigationController *nav = [[UINavigationController alloc] initWithRootViewController:belenVC];
+    self.window.rootViewController = nav;
     
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
